@@ -1,0 +1,29 @@
+To send a POST request using Postman to upload a file and provide a password, you can follow these steps:
+
+Open Postman and create a new request.
+
+Set the request type to "POST."
+
+Enter the URL where your server is listening for file uploads. This URL should correspond to the "/upload" route in your Express application.
+
+In the "Headers" section, you don't need to add any specific headers since your server is likely already configured to handle the necessary headers for file uploads.
+
+In the "Body" section, select the "form-data" option. This allows you to send both the file and password as form data.
+
+Add the following key-value pairs in the "form-data" section:
+
+Key: "file" (this should match the name attribute of your file input element)
+
+Value: Select a file by clicking on the "Select Files" button.
+
+Key: "password" (this should match the name attribute of your password input element)
+
+Value: Enter the password you want to send.
+
+Click the "Send" button to send the POST request.
+
+Your Postman request should now send the file and password to your server's "/upload" route. Make sure your server is running and listening on the correct URL, and it should handle the file upload and password processing as defined in your Express application.
+
+
+
+
